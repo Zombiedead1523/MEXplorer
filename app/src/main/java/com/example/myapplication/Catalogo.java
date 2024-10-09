@@ -26,6 +26,8 @@ public class Catalogo extends AppCompatActivity {
         setContentView(R.layout.activity_catalogo);
         FloatingActionButton fabProfile = findViewById(R.id.fabProfile);
         fabProfile.setOnClickListener(view -> {
+
+
             // Abrir la actividad de perfil
             Intent intent = new Intent(Catalogo.this, Perfil.class);
             startActivity(intent);
