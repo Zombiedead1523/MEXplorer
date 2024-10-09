@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "770914220810",
+    "project_id": "appturismo-f8277",
+    "storage_bucket": "appturismo-f8277.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770914220810:android:98763e4bd79fb10d56d8f3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVFv16LN6ylyuw7daBE25znB5w3VEFfhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

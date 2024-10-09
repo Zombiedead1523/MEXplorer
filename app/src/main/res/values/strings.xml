@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Eco Trails</string>
+
+    <string-array name="filter_options">
+        <item>Colima</item>
+        <item>Jalisco</item>
+        <item>Guanajuato</item>
+        <item>Chiapas</item>
+    </string-array>
+
+
+</resources>
