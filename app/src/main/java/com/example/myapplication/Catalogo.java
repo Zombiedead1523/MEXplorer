@@ -31,7 +31,6 @@ public class Catalogo extends AppCompatActivity {
             // Abrir la actividad de perfil
             Intent intent = new Intent(Catalogo.this, Perfil.class);
             startActivity(intent);
-
         });
         Spinner spinnerFilter = findViewById(R.id.spinnerFilter);
         spinnerFilter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
