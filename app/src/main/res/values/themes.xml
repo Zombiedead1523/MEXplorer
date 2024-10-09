@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -9,7 +9,7 @@
 
     <style name="Redondo">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">40%</item>
+        <item name="cornerSize">10%</item>
     </style>
 
 

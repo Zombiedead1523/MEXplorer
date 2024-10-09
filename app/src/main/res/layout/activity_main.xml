@@ -8,27 +8,38 @@
 
 
     <LinearLayout
+        android:background="@drawable/fondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo"
+        android:paddingTop="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
         android:orientation="vertical">
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/mexplorerText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="180dp"
-            android:text="ECO TRAILS"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="2"
+            android:text="MEXplorer"
             android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="@android:dimen/app_icon_size"
-            android:textStyle="bold"></TextView>
-
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView"
+            app:layout_constraintStart_toStartOf="@+id/shapeableImageView"
+            tools:layout_editor_absoluteY="110dp"></TextView>
         <Space
             android:layout_width="match_parent"
-            android:layout_height="80dp">
-
+            android:layout_height="70dp">
         </Space>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -38,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="16dp"
-            android:hint="Correo electronico"
+            android:hint="User"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
@@ -70,9 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="16dp"
-            android:hint="Contraseña"
+            android:hint="PASSWORD"
             app:endIconMode="password_toggle"
-
             app:errorEnabled="true">
 
 
@@ -96,7 +106,7 @@
             android:gravity="center"
             android:onClick="abrirLogin"
             android:padding="10dp"
-            android:text="Olvidé la contraseña"
+            android:text="FORGOT PASSWORD?"
             android:textSize="14sp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -117,8 +127,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/gris"
                 android:elevation="10dp"
-                android:onClick="Verificar"
-                android:text="Iniciar"
+                android:onClick="abrirCatalogo"
+                android:text="LOG IN"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="italic" />
@@ -132,7 +142,7 @@
                 android:backgroundTint="@color/gris"
                 android:elevation="80dp"
                 android:onClick="abrirRegister"
-                android:text="Registrarse"
+                android:text="SING UP"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="italic" />
