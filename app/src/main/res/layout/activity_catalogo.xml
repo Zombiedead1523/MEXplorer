@@ -15,19 +15,17 @@
         android:layout_height="150dp"
         android:scaleType="centerCrop"
         android:src="@drawable/rosa" />
-    <Spinner
-        android:id="@+id/spinnerFilter"
+    <Button
+        android:id="@+id/filtro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:entries="@array/filter_options"
-        android:spinnerMode="dropdown"
-        android:backgroundTint="@color/white"
-        android:drawableRight="@drawable/arrow_down"
-        android:paddingRight="10dp" />
+        android:backgroundTint="@color/fucsia"
+        android:onClick="abrirFiltro"
+        android:text="FILTER"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabProfile"
@@ -37,10 +35,11 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/verdeacuoso"
+        android:backgroundTint="@color/fucsia"
         android:contentDescription="Perfil"
         android:src="@drawable/profil"
         app:fabSize="normal" />
+
 
 
     <TextView
@@ -54,6 +53,8 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -62,103 +63,17 @@
         android:padding="16dp"
         android:scrollbars="none">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:background="@drawable/redondear"
             android:orientation="vertical">
 
-            <!-- Primera tarjeta -->
-            <androidx.cardview.widget.CardView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="195dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/redondear"
-                android:elevation="80dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/roun"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/gto" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:paddingLeft="16dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="GUANAJUATO"
-                            android:textStyle="bold" />
-
-                        <Space
-                            android:layout_width="5dp"
-                            android:layout_height="10dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Fecha de tour:"
-                            android:textSize="14sp" />
-
-                        <Space
-                            android:layout_width="5dp"
-                            android:layout_height="5dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Descripción de lugar:"
-                            android:textSize="14sp" />
-
-                        <Space
-                            android:layout_width="5dp"
-                            android:layout_height="5dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Costo:"
-                            android:textSize="14sp" />
-
-                        <Space
-                            android:layout_width="5dp"
-                            android:layout_height="30dp" />
-
-                        <RatingBar
-                            android:id="@+id/ratingBar1"
-                            style="?android:attr/ratingBarStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:isIndicator="false"
-                            android:numStars="5"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:onClick="abrirGto"
-                            android:text="VER MÁS..."
-                            android:textColor="#FF0000"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent" />
 
 
 

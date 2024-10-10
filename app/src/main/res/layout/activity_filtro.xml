@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeacuoso"
+    tools:context=".Filtro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/blanco"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Budget Section -->
+                <TextView
+                    android:id="@+id/tvBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- RadioGroup for Budget options -->
+                <RadioGroup
+                    android:id="@+id/rgBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbBudget1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$500 MX - $1,000 MX" />
+
+                    <RadioButton
+                        android:id="@+id/rbBudget2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1,000 MX - $2,500 MX" />
+
+                    <RadioButton
+                        android:id="@+id/rbBudget3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2,500 MX - $5,000 MX" />
+
+                </RadioGroup>
+
+                <!-- Group Size Section -->
+                <TextView
+                    android:id="@+id/tvGroupSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Group size"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- RadioGroup for Group Size options -->
+                <RadioGroup
+                    android:id="@+id/rgGroupSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbSoloTraveler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solo traveler" />
+
+                    <RadioButton
+                        android:id="@+id/rbCouples"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Couples" />
+
+                    <RadioButton
+                        android:id="@+id/rbFamilies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Families" />
+
+                    <RadioButton
+                        android:id="@+id/rbLargeGroups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large groups (5+ people)" />
+
+                </RadioGroup>
+
+                <!-- Type of Section -->
+                <TextView
+                    android:id="@+id/tvTypeOf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- RadioGroup for Type of options -->
+                <RadioGroup
+                    android:id="@+id/rgTypeOf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbCultural"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cultural" />
+
+                    <RadioButton
+                        android:id="@+id/rbHistorical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Historical" />
+
+                    <RadioButton
+                        android:id="@+id/rbAdventure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adventure" />
+
+                    <RadioButton
+                        android:id="@+id/rbRelaxation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relaxation" />
+
+                    <RadioButton
+                        android:id="@+id/rbGastronomy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gastronomy" />
+
+                    <RadioButton
+                        android:id="@+id/rbShopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shopping" />
+
+                    <RadioButton
+                        android:id="@+id/rbNightlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nightlife" />
+
+                    <RadioButton
+                        android:id="@+id/rbFamilyFriendly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family-Friendly" />
+
+                    <RadioButton
+                        android:id="@+id/rbWellnessSpa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wellness and Spa" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:weightSum="2">
+
+            <!-- Reset All Button -->
+            <Button
+                android:id="@+id/btnResetAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset All"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                />
+
+            <!-- Apply Button -->
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apply"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/fucsia"
+                android:layout_marginStart="8dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

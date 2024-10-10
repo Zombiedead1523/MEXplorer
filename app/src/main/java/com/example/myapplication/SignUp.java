@@ -126,7 +126,7 @@ public class SignUp extends AppCompatActivity {
                                                         Intent i = new Intent(SignUp.this, MainActivity.class);
                                                         startActivity(i);
                                                         Toast.makeText(SignUp.this, "El usuario se registró correctamente.", Toast.LENGTH_LONG).show();
-                                                        //mandarCorreo();
+                                                        mandarCorreo();
                                                     } else {
                                                         Toast.makeText(SignUp.this, "Error al registrar el usuario en Firestore: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                                     }

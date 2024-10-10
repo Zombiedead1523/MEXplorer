@@ -8,7 +8,7 @@
 
 
     <LinearLayout
-        android:background="@drawable/fondo"
+        android:background="@drawable/fondoprin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="210dp"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:shadowColor="#000000"
+            android:shadowColor="#0E2B49"
             android:shadowDx="10"
             android:shadowDy="10"
             android:shadowRadius="2"
@@ -104,7 +104,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:onClick="abrirLogin"
+            android:onClick="recuperarContra"
             android:padding="10dp"
             android:text="FORGOT PASSWORD?"
             android:textSize="14sp"
@@ -127,7 +127,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/gris"
                 android:elevation="10dp"
-                android:onClick="abrirCatalogo"
+                android:onClick="Verificar"
                 android:text="LOG IN"
                 android:textColor="@color/black"
                 android:textSize="18sp"

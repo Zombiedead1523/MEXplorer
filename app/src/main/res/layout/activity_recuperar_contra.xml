@@ -69,10 +69,22 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="15dp" />
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/Registrarse"
+                    android:layout_width="232dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="abrirRegister"
+                    android:text="Recuperar Contraseña"
+                    android:textColor="#8F004F"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></TextView>
+
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/EmailContainer"
@@ -85,7 +97,7 @@
                     app:errorEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/email"
+                        android:id="@+id/emailRecuperar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
@@ -94,57 +106,19 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/pass1Container"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="32dp"
-                    android:layout_marginTop="3dp"
-                    android:hint="PASSWORD"
-                    app:endIconMode="password_toggle"
-                    app:errorEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/editTextPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:textColor="#000000"
-                        android:textStyle="bold"></com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/pwdContainer"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="32dp"
-                    android:layout_marginTop="3dp"
-                    android:hint="PASSWORD"
-                    app:endIconMode="password_toggle"
-                    app:errorEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/editTextConfirmPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:textColor="#000000"
-                        android:textStyle="bold"></com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="25dp" />
 
 
                 <Button
-                    android:id="@+id/registerButton"
+                    android:id="@+id/restaurarButton"
                     android:layout_width="236dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center_horizontal"
                     android:elevation="2dp"
                     android:onClick="Ejecutar"
-                    android:text="Sing Up"
+                    android:text="Recover password"
                     android:textSize="20sp"
                     android:backgroundTint="@color/verdeacuoso"
                     android:textStyle="italic"></Button>
@@ -153,28 +127,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="16dp"></Space>
 
-                <TextView
-                    android:id="@+id/Ingresa"
-                    android:layout_width="232dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:onClick="abrirLogin"
-                    android:text="Already have an account?, LOG IN"
-                    android:textSize="14sp"
-                    android:textStyle="bold"></TextView>
             </LinearLayout>
 
         </FrameLayout>
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

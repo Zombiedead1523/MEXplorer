@@ -38,12 +38,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirCatalogo(View v) {
-        Intent i = new Intent(this, Catalogo.class);
+        Intent i = new Intent(this, Intereses.class);
         startActivity(i);
     }
 
     public void abrirRegister(View v) {
         Intent i = new Intent(this, SignUp.class);
+        startActivity(i);
+    }
+
+    public void recuperarContra(View v) {
+        Intent i = new Intent(this, RecuperarContra.class);
         startActivity(i);
     }
 
