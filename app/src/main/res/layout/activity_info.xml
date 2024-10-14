@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,26 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".Info">
 
-
     <!-- Imagen de fondo -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:src="@drawable/rosa" />
-
 
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="Guanajuato Tour"
+        android:layout_marginTop="150dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        android:text="Title"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
-
         android:textStyle="bold" />
 
     <ScrollView
@@ -39,115 +39,62 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:background="@drawable/redondear"
             android:orientation="vertical">
 
-            <!-- Primera tarjeta -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="¿Quieres conocer mas acerca de Guanajauato?"
+                android:text="Review"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="23dp"
                 android:textStyle="bold" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewCarousel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:elevation="80dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:listitem="@layout/item_image" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
             <TextView
+                android:id="@+id/know"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="¿Sabias que?.... \n Cultura."
+                android:text="Review"
                 android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="" />
-
+                android:textSize="20dp"/>
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="30dp">
+            </Space>
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Ecología del area."
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:text="Description:"
+                android:textAlignment="textStart"
+                android:textSize="23dp" />
 
             <TextView
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Descubre con nosotros tu \nlugar favorito..."
-                android:textSize="20dp"
-                android:textStyle="" />
+                android:text="Description"
+                android:textAlignment="textStart"
+                android:textSize="20dp" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="30dp">
+            </Space>
 
             <TextView
+                android:id="@+id/cost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:text="¿Que incluye el tour?"
-                android:textSize="20dp"
-                android:textStyle="" />
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:text="Cost:"
+                android:textColor="#2467DC"
+                android:textStyle="bold"
+                android:textSize="17dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="Costo: \n Reglas:"
-                android:textSize="20dp"
-                android:textStyle="" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="Agente del viaje"
-                android:textSize="20dp"
-                android:textStyle="" />
-
-            <Button
-                android:id="@+id/reservar1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="RESERVAR"
-                android:backgroundTint="@color/verdeacuoso">
-            </Button>
-
-            <!-- Puedes duplicar este bloque CardView para agregar más tarjetas -->
         </LinearLayout>
     </ScrollView>
 

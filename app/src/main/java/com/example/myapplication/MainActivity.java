@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
     }
 
-    public void abrirCatalogo(View v) {
+    public void abrirIntereses(View v) {
         Intent i = new Intent(this, Intereses.class);
         startActivity(i);
     }
@@ -73,8 +73,18 @@ public class MainActivity extends AppCompatActivity {
                                                     @Override
                                                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                                                         if (documentSnapshot.exists()) {
-                                                            Intent i = new Intent(MainActivity.this, Catalogo.class);
-                                                            startActivity(i);
+                                                            // Verificar si el usuario ya seleccionó intereses
+                                                            Boolean interesesSeleccionados = documentSnapshot.getBoolean("interesesSeleccionados");
+
+                                                            if (interesesSeleccionados != null && interesesSeleccionados) {
+                                                                // Si ya seleccionó intereses, ir a Catalogo
+                                                                Intent i = new Intent(MainActivity.this, Catalogo.class);
+                                                                startActivity(i);
+                                                            } else {
+                                                                // Si no ha seleccionado intereses, ir a la pantalla de Intereses
+                                                                Intent i = new Intent(MainActivity.this, Intereses.class);
+                                                                startActivity(i);
+                                                            }
                                                         } else {
                                                             // El usuario no tiene datos adicionales en Firestore
                                                             Toast.makeText(MainActivity.this, "El email no se encuentra registrado", Toast.LENGTH_LONG).show();

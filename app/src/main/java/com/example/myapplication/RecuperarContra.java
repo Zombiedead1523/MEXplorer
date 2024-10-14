@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,6 +52,8 @@ public class RecuperarContra extends AppCompatActivity {
                                     // Correo enviado exitosamente
                                     Toast.makeText(RecuperarContra.this, "\n" +
                                             "Recovery email sent", Toast.LENGTH_LONG).show();
+                                    Intent i = new Intent(RecuperarContra.this, MainActivity.class);
+                                    startActivity(i);
                                 } else {
                                     // Error al enviar el correo
                                     Toast.makeText(RecuperarContra.this, "Error sending email", Toast.LENGTH_LONG).show();

@@ -68,7 +68,7 @@ public class Filtro extends AppCompatActivity {
         return null;
     }
 
-    public void aplicarFiltros(View v) {
+    public void aplicarFiltross(View v) {
         // Obtén los valores seleccionados por el usuario
         String presupuesto = rgBudget.toString();
         String tamañoGrupo = rgGroupSize.toString();

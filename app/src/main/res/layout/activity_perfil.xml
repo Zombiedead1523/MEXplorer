@@ -16,7 +16,7 @@
             android:layout_height="247dp"
             android:layout_gravity="center"
             android:background="@drawable/blanco"
-            android:backgroundTint="@color/verdeacuoso"
+            android:backgroundTint="@color/fucsia"
             android:padding="8dp">
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -61,29 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/blanco"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:elevation="20dp"
-            android:layout_gravity="center">
-
-            <TextView
-                android:id="@+id/textViewPersonalData"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:text="Datos personales"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-        </FrameLayout>
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
@@ -110,7 +87,20 @@
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
+
+
         </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="70dp"
+            android:gravity="bottom|center"
+            android:text="Contáctanos: 3921220144"
+            android:textColor="@color/verdeacuoso"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
