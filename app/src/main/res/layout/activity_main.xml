@@ -54,7 +54,7 @@
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:counterEnabled="true"
+            app:counterEnabled="false"
             app:counterMaxLength="8"
             app:errorEnabled="true">
 
